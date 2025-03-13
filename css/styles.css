@@ -1,0 +1,429 @@
+@import url('fonts.css');
+
+:root {
+    --primary-font: 'Noto Sans JP', sans-serif;
+    --secondary-font: 'Josefin Sans', sans-serif;
+    --nav-color: #95c7ff;
+    --background-color: #ffffff;
+    --background-secondary: #f3f3f3;
+    --border-primary: color-mix(in srgb, var(--background-secondary), black 20%);
+    --accent-color: #007bff;
+    --accent-dark: color-mix(in srgb, var(--accent-color), black 30%);
+}
+
+* {
+    font-family: var(--primary-font), sans-serif;
+}
+
+body {
+    animation: fadeIn 0.3s ease-in-out;
+    background-color: var(--background-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--nav-color);
+    border-bottom: 2px solid #bbb;
+    width: 97dvw;
+}
+
+/* Navigation Links */
+.nav-links {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Links Styling */
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+/* Hamburger Icon (Hidden by Default) */
+.hamburger {
+    display: none; /* Shown only on small screens */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Default - Desktop */
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+
+/* em styling */
+em {
+    font-weight: bold;
+    font-style: normal;
+    font-family: var(--secondary-font), sans-serif;
+}
+
+/* General header styling */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--background-secondary); /* Light gray for a clean look */
+    border-bottom: 2px solid var(--border-primary);
+}
+
+hgroup {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+
+/* Header paragraph */
+header p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+
+/* Quote */
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #444;
+    border-left: 3px solid var(--accent-color);
+    padding: 8px 15px;
+    margin: 15px 0;
+    background-color: var(--background-secondary);
+}
+
+.project-img img{
+    width: 250px;
+    height: 250px;
+    border: 3px solid var(--accent-color);
+    border-radius: 5px;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* List Style */
+#coursework ul, #skills ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each List Item */
+#coursework li, #skills li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 5px;
+    list-style: none;
+}
+
+/* Contact Section Styling */
+section, aside {
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+}
+
+section:has(img) {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+
+
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+/* Labels */
+
+.contact-form * {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Required Asterisk */
+.contact-form label::after {
+    content: " *";
+    color: red;
+}
+
+/* Inputs, Select, and Textarea */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 30%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Error & Info Messages */
+.contact-form .error-message,
+.contact-form .info-message {
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 5px;
+}
+
+ /*Submit Button*/
+.contact-form button {
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+/* Highlight invalid fields */
+input:user-invalid,
+textarea:user-invalid {
+    border: 1px solid red;
+}
+
+/* Highlight valid fields */
+input:valid,
+textarea:valid {
+    border: 1px solid green;
+}
+
+/* Style required fields */
+input:required,
+textarea:required,
+select:required {
+    border-left: 4px solid var(--accent-color);
+}
+
+
+
+/* Button */
+button {
+    width: 20rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: var(--accent-dark);
+    transform: scale(1.05);
+}
+
+details {
+    background: white;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+summary {
+    cursor: pointer;
+}
+
+iframe {
+    width: 90dvw;
+    height: 500px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+
+th {
+    background: var(--accent-color);
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+dl {
+    margin: 15px auto;
+    padding: 10px;
+    background: var(--background-secondary);
+    border-radius: 5px;
+}
+
+
+dt {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+dd {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+
+
+.switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 34px;
+    margin: 7px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+input:checked + .slider {
+    background-color: red;
+}
+
+
+
+
+/* Medium Screens - Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .profile-pic img {
+        max-width: 200px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form button,
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        width: 50%;
+    }
+
+}
+
+/* Small Screens / Mobile Device (Under 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /*flex-direction: column;*/
+        /*background: var(--background-color);*/
+        /*position: absolute;*/
+        /*top: 60px;*/
+        /*right: 0;*/
+        /*width: 100%;*/
+        /*text-align: center;*/
+        /*padding: 20px 0;*/
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .profile-pic img {
+        max-width: 150px; /* Even smaller for phones */
+    }
+
+    .contact-form button,
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        width: 70%;
+    }
+}
+
+
+

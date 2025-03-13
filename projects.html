@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trevor Duong's Projects - Showcasing Software Engineering Work">
+    <title>Projects - Trevor Duong</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li>
+            <noscript>
+                <p style="color: red;">JavaScript is required for the theme switcher to work.</p>
+            </noscript>
+        </li>
+
+        <li id="theme-toggle-container" style="display: none;">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<hr>
+
+<header>
+    <h1>My Projects</h1>
+    <p>Here are some of my featured projects showcasing my skills in web and app development:</p>
+</header>
+
+<!-- Main Content -->
+<main>
+
+
+
+
+    <!-- Project Grid Layout -->
+    <section class="projects">
+        <figure>
+            <picture class="project-img">
+                <source srcset="assets/project1-small.jpg" media="(max-width: 480px)">
+                <source srcset="assets/project1-medium.jpg" media="(max-width: 1024px)">
+                <img src="assets/project1-large.jpg" alt="Project 1 Preview" loading="lazy">
+            </picture>
+            <figcaption>
+                <p><strong>Project 1</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">View Project</a>
+            </figcaption>
+        </figure>
+
+        <figure>
+
+            <picture class="project-img">
+                <source srcset="assets/project2-small.jpg" media="(max-width: 480px)">
+                <source srcset="assets/project2-medium.jpg" media="(max-width: 1024px)">
+                <img src="assets/project2-large.jpg" alt="Project 2 Preview" loading="lazy">
+            </picture>
+            <figcaption>
+                <p><strong>Project 2</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">View Project</a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <picture class="project-img">
+                <source srcset="assets/project3-small.jpg" media="(max-width: 480px)">
+                <source srcset="assets/project3-medium.jpg" media="(max-width: 1024px)">
+                <img src="assets/project3-large.jpg" alt="Project 3 Preview" loading="lazy">
+            </picture>
+            <figcaption>
+                <p><strong>Project 3</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">View Project</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section id="coursework">
+        <h2>Relevant Coursework</h2>
+        <ul>
+            <li>
+                <strong>CSE 100: Advanced Data Structures</strong>
+                <p>High-performance data structures and supporting algorithms. Topics include the use and implementation of data structures like balanced and unbalanced trees, graphs, priority queues, and hash tables, as well as memory management, pointers, and recursion. The course emphasizes both theoretical and practical performance analysis, using C++ and the Standard Template Library (STL).</p>
+            </li>
+            <li>
+                <strong>CSE 101: Design and Analysis of Algorithms</strong>
+                <p>Design and analysis of efficient algorithms with an emphasis on non-numerical algorithms such as sorting, searching, pattern matching, and graph and network algorithms. The course covers measuring the complexity of algorithms, including time and storage, and discusses NP-complete problems.</p>
+            </li>
+            <li>
+                <strong>CSE 132A: Introduction to Database Systems</strong>
+                <p>Basic concepts of databases, including data modeling, relational databases, query languages, optimization, dependencies, schema design, and concurrency control. The course provides exposure to one or several commercial database systems and may cover advanced topics such as deductive and object-oriented databases, time permitting.</p>
+            </li>
+            <li>
+                <strong>CSE 110: Software Engineering</strong>
+                <p>An introduction to the principles of software engineering, including software development life cycles, requirements analysis, design methodologies, testing strategies, and project management. The course emphasizes practical experience through team-based projects, fostering skills in collaboration, communication, and the application of software engineering practices.</p>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Trevor Duong. All Rights Reserved.</p>
+    <address>
+        Contact: <a href="mailto:trduong@ucsd.edu">trduong@ucsd.edu</a>
+    </address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trevor Duong - Resume">
+    <title>Resume - Trevor Duong</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li>
+            <noscript>
+                <p style="color: red;">JavaScript is required for the theme switcher to work.</p>
+            </noscript>
+        </li>
+
+        <li id="theme-toggle-container" style="display: none;">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<hr>
+
+<header>
+    <h1>Resume</h1>
+    <p>View and download my full resume here:</p>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section>
+        <h2>Full Resume</h2>
+        <a href="assets/Trevor_Duong_Resume.pdf" download><button>Download Resume (PDF)</button></a>
+        <br><br>
+        <iframe src="assets/Trevor_Duong_Resume.pdf"></iframe>
+    </section>
+
+    <!-- Work Experience Table -->
+    <section>
+        <h2>Work Experience</h2>
+        <table>
+            <caption><em>Professional Experience</em></caption>
+
+            <colgroup>
+                <col>
+                <col span="2">
+            </colgroup>
+
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td><b>Code Ninjas</b></td>
+                <td>Instructor</td>
+                <td>Summer 2022</td>
+            </tr>
+            <tr>
+                <td><b>Desert Gastro</b></td>
+                <td>Back Office</td>
+                <td>Summer 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <dl>
+            <dt><em>University of California, San Diego</em></dt>
+            <dd>Bachelor of Science in Computer Science</dd>
+            <dd>Expected Graduation: 2027</dd>
+        </dl>
+        <dl>
+            <dt><em>Palm Desert High School</em></dt>
+            <dd>Salutatorian</dd>
+            <dd>Graduated Class of 2023</dd>
+        </dl>
+    </section>
+
+    <!-- Relevant Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ol>
+            <li><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript</li>
+            <li>Java, Python, C++, C (ARM Assembly)</li>
+            <li>Spring Boot, React, PostgreSQL</li>
+            <li>Git, GitHub, Linux</li>
+        </ol>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Trevor Duong. All Rights Reserved.</p>
+    <address>
+        Contact: <a href="mailto:trduong@ucsd.edu">trduong@ucsd.edu</a>
+    </address>
+</footer>
+
+</body>
+</html>
