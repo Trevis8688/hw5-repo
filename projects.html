@@ -6,7 +6,7 @@
     <meta name="description" content="Trevor Duong's Projects - Showcasing Software Engineering Work">
     <title>Projects - Trevor Duong</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="js/projectCard.js" defer></script>
     <script src="js/theme.js" defer></script>
 </head>
 <body>
@@ -50,48 +50,49 @@
 
 
 
-    <!-- Project Grid Layout -->
+<!--     Project Grid Layout -->
     <section class="projects">
-        <figure>
-            <picture class="project-img">
-                <source srcset="assets/project1-small.jpg" media="(max-width: 480px)">
-                <source srcset="assets/project1-medium.jpg" media="(max-width: 1024px)">
-                <img src="assets/project1-large.jpg" alt="Project 1 Preview" loading="lazy">
-            </picture>
-            <figcaption>
-                <p><strong>Project 1</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">View Project</a>
-            </figcaption>
-        </figure>
+        <project-card>
+            <project-img-src>assets/project1-large.jpg</project-img-src>
+            <project-img-src-medium>assets/project1-medium.jpg</project-img-src-medium>
+            <project-img-src-small>assets/project1-small.jpg</project-img-src-small>
+            <project-title>Project 1</project-title>
+            <project-description>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</project-description>
+            <project-link>#</project-link>
+        </project-card>
 
-        <figure>
+        <project-card>
+            <project-img-src>assets/project2-large.jpg</project-img-src>
+            <project-img-src-medium>assets/project2-medium.jpg</project-img-src-medium>
+            <project-img-src-small>assets/project2-small.jpg</project-img-src-small>
+            <project-title>Project 2</project-title>
+            <project-description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</project-description>
+            <project-link>#</project-link>
+        </project-card>
 
-            <picture class="project-img">
-                <source srcset="assets/project2-small.jpg" media="(max-width: 480px)">
-                <source srcset="assets/project2-medium.jpg" media="(max-width: 1024px)">
-                <img src="assets/project2-large.jpg" alt="Project 2 Preview" loading="lazy">
-            </picture>
-            <figcaption>
-                <p><strong>Project 2</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">View Project</a>
-            </figcaption>
-        </figure>
+        <project-card>
+            <project-img-src>assets/project3-large.jpg</project-img-src>
+            <project-img-src-medium>assets/project3-medium.jpg</project-img-src-medium>
+            <project-img-src-small>assets/project3-small.jpg</project-img-src-small>
+            <project-title>Project 3</project-title>
+            <project-description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</project-description>
+            <project-link>#</project-link>
+        </project-card>
 
-        <figure>
-            <picture class="project-img">
-                <source srcset="assets/project3-small.jpg" media="(max-width: 480px)">
-                <source srcset="assets/project3-medium.jpg" media="(max-width: 1024px)">
-                <img src="assets/project3-large.jpg" alt="Project 3 Preview" loading="lazy">
-            </picture>
-            <figcaption>
-                <p><strong>Project 3</strong></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">View Project</a>
-            </figcaption>
-        </figure>
+        <project-card>
+            <project-img-src>assets/project3-large.jpg</project-img-src>
+            <project-img-src-medium>assets/project3-medium.jpg</project-img-src-medium>
+            <project-img-src-small>assets/project3-small.jpg</project-img-src-small>
+            <project-title>Project 3</project-title>
+            <project-description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</project-description>
+            <project-link>#</project-link>
+        </project-card>
+
     </section>
+
+
 
     <section id="coursework">
         <h2>Relevant Coursework</h2>

@@ -144,7 +144,19 @@ blockquote {
 
 .projects {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.project-card {
+    width: 370px; /* Set a fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 
