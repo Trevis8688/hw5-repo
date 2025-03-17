@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="lab.html">Lab</a></li>
+
+    <li>
+      <noscript>
+        <p style="color: red;">JavaScript is required for the theme switcher to work.</p>
+      </noscript>
+    </li>
+
+    <li id="theme-toggle-container" style="display: none;">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" onclick="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+    </li>
+
+  </ul>
+</nav>
+
+
+<h1>Oops! Page Not Found</h1>
+<p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+<a href="index.html">Go Back Home</a>
+
+</body>
+</html>
