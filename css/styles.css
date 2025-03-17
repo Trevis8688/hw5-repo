@@ -411,14 +411,14 @@ input:checked + .slider {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-        /*flex-direction: column;*/
-        /*background: var(--background-color);*/
-        /*position: absolute;*/
-        /*top: 60px;*/
-        /*right: 0;*/
-        /*width: 100%;*/
-        /*text-align: center;*/
-        /*padding: 20px 0;*/
+        flex-direction: column;
+        background: var(--background-color);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
     }
 
     .hamburger {
@@ -434,6 +434,16 @@ input:checked + .slider {
     .contact-form select,
     .contact-form textarea {
         width: 70%;
+    }
+
+    .nav-links.show {
+        display: flex; /* Show nav links when menu is toggled */
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
     }
 }
 

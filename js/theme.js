@@ -36,3 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setSavedTheme();
 });
+
+function toggleMenu(){
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("show");
+}
+
+document.getElementById("hamburger").addEventListener("click", toggleMenu);
