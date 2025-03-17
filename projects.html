@@ -6,6 +6,7 @@
     <meta name="description" content="Trevor Duong's Projects - Showcasing Software Engineering Work">
     <title>Projects - Trevor Duong</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/dataLoader.js"></script>
     <script src="js/projectCard.js" defer></script>
     <script src="js/theme.js" defer></script>
 </head>
@@ -51,58 +52,70 @@
 
 
 <!--     Project Grid Layout -->
+    <button id="loadLocal">Load Local</button>
+    <button id="loadRemote">Load Remote</button>
     <section class="projects">
-        <project-card>
-            <project-img-src>assets/project1-large.jpg</project-img-src>
-            <project-img-src-medium>assets/project1-medium.jpg</project-img-src-medium>
-            <project-img-src-small>assets/project1-small.jpg</project-img-src-small>
-            <project-title>Project 1</project-title>
-            <project-description>
-                A fitness-themed web application featuring a catalog of exercises and tutorials, built with React JS, HTML, CSS, Exercise API Database, and Google YouTube API.
-            </project-description>
-            <project-link>#</project-link>
-        </project-card>
 
-        <project-card>
-            <project-img-src>assets/project2-large.jpg</project-img-src>
-            <project-img-src-medium>assets/project2-medium.jpg</project-img-src-medium>
-            <project-img-src-small>assets/project2-small.jpg</project-img-src-small>
-            <project-title>Product CRUD API</project-title>
-            <project-description>
-                Developed a Java Spring Boot backend application for managing store products.
-                Designed and implemented RESTful APIs to handle CRUD (Create, Read, Update, Delete) operations,
-                ensuring efficient product management. Integrated Spring Boot’s H2 database for data storage and retrieval.
-            </project-description>
-            <project-link>#</project-link>
-        </project-card>
+        <project-card></project-card>
 
-        <project-card>
-            <project-img-src>assets/project3-large.jpg</project-img-src>
-            <project-img-src-medium>assets/project3-medium.jpg</project-img-src-medium>
-            <project-img-src-small>assets/project3-small.jpg</project-img-src-small>
-            <project-title>Blackjack App</project-title>
-            <project-description>
-                Developed a functional blackjack simulation app using Xcode, Swift, and SwiftUI/UIKit.
-                The app follows official blackjack rules, includes a point system, and integrates online
-                assets for an engaging user experience.
-            </project-description>
-            <project-link>#</project-link>
-        </project-card>
+        <!-- Hardcoded project-card implementation-->
+<!--        <project-card>-->
+<!--            <project-img-src>assets/project1-large.jpg</project-img-src>-->
+<!--            <project-img-src-medium>assets/project1-medium.jpg</project-img-src-medium>-->
+<!--            <project-img-src-small>assets/project1-small.jpg</project-img-src-small>-->
+<!--            <project-title>Fitness Site</project-title>-->
+<!--            <project-description>-->
+<!--                A fitness-themed web application featuring a catalog of exercises and tutorials, built with React JS, HTML, CSS, Exercise API Database, and Google YouTube API.-->
+<!--            </project-description>-->
+<!--            <project-link>#</project-link>-->
+<!--        </project-card>-->
 
-        <project-card>
-            <project-img-src>assets/project4.jpg</project-img-src>
-            <project-img-src-medium>assets/project3-medium.jpg</project-img-src-medium>
-            <project-img-src-small>assets/project3-small.jpg</project-img-src-small>
-            <project-title>Habitizer Application</project-title>
-            <project-description>
-                Worked in a team of 6 engineers to create a habit tracking application with routines and tasks as
-                per customer's requirements. Utilized proper AGILE software development techniques and design patterns
-                to construct an Android application using Java and a SQLite ROOM database.
-            </project-description>
-            <project-link>#</project-link>
-        </project-card>
+<!--        <project-card>-->
+<!--            <project-img-src>assets/project2-large.jpg</project-img-src>-->
+<!--            <project-img-src-medium>assets/project2-medium.jpg</project-img-src-medium>-->
+<!--            <project-img-src-small>assets/project2-small.jpg</project-img-src-small>-->
+<!--            <project-title>Product CRUD API</project-title>-->
+<!--            <project-description>-->
+<!--                Developed a Java Spring Boot backend application for managing store products.-->
+<!--                Designed and implemented RESTful APIs to handle CRUD (Create, Read, Update, Delete) operations,-->
+<!--                ensuring efficient product management. Integrated Spring Boot’s H2 database for data storage and retrieval.-->
+<!--            </project-description>-->
+<!--            <project-link>#</project-link>-->
+<!--        </project-card>-->
 
+<!--        <project-card>-->
+<!--            <project-img-src>assets/project3-large.jpg</project-img-src>-->
+<!--            <project-img-src-medium>assets/project3-medium.jpg</project-img-src-medium>-->
+<!--            <project-img-src-small>assets/project3-small.jpg</project-img-src-small>-->
+<!--            <project-title>Blackjack App</project-title>-->
+<!--            <project-description>-->
+<!--                Developed a functional blackjack simulation app using Xcode, Swift, and SwiftUI/UIKit.-->
+<!--                The app follows official blackjack rules, includes a point system, and integrates online-->
+<!--                assets for an engaging user experience.-->
+<!--            </project-description>-->
+<!--            <project-link>#</project-link>-->
+<!--        </project-card>-->
 
+<!--        <project-card>-->
+<!--            <project-img-src>assets/project4.png</project-img-src>-->
+<!--            <project-title>Habitizer Application</project-title>-->
+<!--            <project-description>-->
+<!--                Worked in a team of 6 engineers to create a habit tracking application with routines and tasks as-->
+<!--                per customer's requirements. Utilized proper AGILE software development techniques and design patterns-->
+<!--                to construct an Android application using Java and a SQLite ROOM database.-->
+<!--            </project-description>-->
+<!--            <project-link>#</project-link>-->
+<!--        </project-card>-->
+
+<!--        <project-card>-->
+<!--            <project-img-src>assets/project5.png</project-img-src>-->
+<!--            <project-title>TV Show Catalog iOS App</project-title>-->
+<!--            <project-description>-->
+<!--                Built an iOS mobile app using Xcode and Swift to fetch, format, and display JSON data from an online TV show API.-->
+<!--                Implemented search functionality to allow users to find and view detailed information on their favorite shows.-->
+<!--            </project-description>-->
+<!--            <project-link>#</project-link>-->
+<!--        </project-card>-->
     </section>
 
 
